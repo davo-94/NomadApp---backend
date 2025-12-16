@@ -59,7 +59,7 @@ public class PostController {
             Path target = Paths.get("uploads").resolve(filename);
             Files.copy(file.getInputStream(), target, StandardCopyOption.REPLACE_EXISTING);
 
-            String url = "http://192.168.0.102:8082/uploads/" + filename;
+            String url = "http://10.138.135.65:8082/uploads/" + filename;
             urls.add(url);
         }
 
